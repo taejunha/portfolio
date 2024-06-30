@@ -1,3 +1,6 @@
+import spotify from "../assets/spotify.png";
+import campus from "../assets/campus.png";
+
 export const navLinks = [
     {
       id: "intro",
@@ -16,18 +19,26 @@ export const navLinks = [
   const portfolio = [
     {
       name: "Soulage",
+      techstack: "TypeScript, TailwindCSS, MongoDB, Node.js, GitHub",
+      link: "https://github.com/doh43/StudyNook",
       description:
-        "A fullstack project using TypeScript and MongoDB displaying public washrooms available for use in the city of Toronto where users can rate, review, and save the washrooms (STILL WIP).",
-    },
-    {
-      name: "GIS Map for Western",
-      description:
-        "A full stack project using Java where users can access different campus buildings and discover/create points of interests for the buildings.",
+        "A fullstack project displaying public washrooms available for use in the city of Toronto where users can rate, review, and save the washrooms (STILL WIP).",
     },
     {
       name: "Spotify Stats",
+      techstack: "React, CSS, GitHub, SpotifyAPI",
+      link: "https://github.com/taejunha/spotify-stats",
       description:
-        "A web application using React that displays a users top 50 tracks and artists from Spotify.",
+        "A web application that displays a users top 50 tracks and artists from Spotify.",
+        image: spotify,
+    },
+    {
+      name: "Western GIS Map",
+      techstack: "Java, JavaSwing, Confluence, Jira, BitBucket",
+      link: "https://github.com/taejunha/Western-GIS-Map",
+      description:
+        "A full stack project where users can access different campus buildings and discover/create points of interests for the buildings.",
+        image: campus,
     },
   ];
   

@@ -12,7 +12,7 @@ const App = () => {
           <div id="hero" className='z-10'>
             <First scrollContainer={wrapperRef} />
           </div>
-          <div id="introduction" className='relative z-30 bg-primary'>
+          <div id="introduction" className="pd-2">
             <Intro />
           </div>
           <div id="projects" className='relative z-30 bg-primary mt-[-2px]'>

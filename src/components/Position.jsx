@@ -14,12 +14,12 @@ const produceSpans = (text, animation) => {
 
 const Position = () => {
   return (
-    <div className="relative cursor-default font-medium text-white text-[16px] xs:text-[20px] sm:text-[30px] md:text-[36px] 2xl:text-[66px] leading-[32px] 2xl:leading-[40px] w-full flex justify-center items-center">
-      <div className="absolute inset-0 top-[-30px] sm:top-[-10px] lg:top-0 flex flex-col">
-        <div className="text first absolute left-1 md:left-2 2xl:left-4 flex" aria-label="Software Developer">
+    <div className="fixed top-0 left-0 cursor-default font-medium text-white text-[16px] xs:text-[15px] sm:text-[20px] md:text-[30px] 2xl:text-[50px] leading-[32px] 2xl:leading-[40px] w-full flex justify-start items-start p-2">
+      <div className="flex flex-col">
+        <div className="text first flex" aria-label="Full-Stack Developer">
           {produceSpans("Full-Stack Developer", "animate-textRotate1")}
         </div>
-        <div className="text second absolute left-1 md:left-2 2xl:left-4 flex" aria-label="Content Creator">
+        <div className="text second flex" aria-label="Student">
           {produceSpans("Student", "animate-textRotate2")}
         </div>
       </div>
