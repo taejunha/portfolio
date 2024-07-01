@@ -1,5 +1,6 @@
 import spotify from "../assets/spotify.png";
 import campus from "../assets/campus.png";
+import soulage from "../assets/soulage.png";
 
 export const navLinks = [
     {
@@ -19,14 +20,15 @@ export const navLinks = [
   const portfolio = [
     {
       name: "Soulage",
-      techstack: "TypeScript, TailwindCSS, MongoDB, Node.js, GitHub",
+      techstack: "TypeScript, TailwindCSS, MongoDB, Node.js",
       link: "https://github.com/doh43/StudyNook",
       description:
         "A fullstack project displaying public washrooms available for use in the city of Toronto where users can rate, review, and save the washrooms (STILL WIP).",
+        image: soulage,
     },
     {
       name: "Spotify Stats",
-      techstack: "React, CSS, GitHub, SpotifyAPI",
+      techstack: "React, HTML, CSS, SpotifyAPI",
       link: "https://github.com/taejunha/spotify-stats",
       description:
         "A web application that displays a users top 50 tracks and artists from Spotify.",

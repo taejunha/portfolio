@@ -1,4 +1,4 @@
-const First = ({ scrollContainer }) => {
+const Hero = ({ scrollContainer }) => {
   return (
     <section className="parallax">
       <div className="parallax__content absolute top-[10%] sm:top-[16%] lg:top-[2%] w-full mx-auto lg:pl-[38vh] lg:pr-[30vh] xl:pl-96 xl:pr-72 2xl:px-40 3xl:px-60 flex flex-col lg:flex-row">
@@ -18,4 +18,4 @@ const First = ({ scrollContainer }) => {
   );
 };
 
-export default First;
+export default Hero;

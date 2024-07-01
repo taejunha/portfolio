@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { BrowserRouter } from "react-router-dom";
 import { Contact, First, Intro, Projects } from "./components";
+import Starfield from './components/Starfield';
 
 const App = () => {
   const wrapperRef = useRef(null);
@@ -23,6 +24,13 @@ const App = () => {
           </div>
         </div>
       </div>
+      {/* <Starfield
+          zIndex={-1}
+          starCount={800}
+          starColor={[255,255,153]}
+          speedFactor={0.013}
+          backgroundColor="black"
+        /> */}
     </BrowserRouter>
   );
 };

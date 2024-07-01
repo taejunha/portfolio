@@ -34,7 +34,7 @@ const ProjectCard = ({
         ref={ref}
         animate={controls}
         initial="hidden"
-        variants={fadeIn("right", "spring", 0, 0.9)}
+        variants={fadeIn("right", "spring", 0, 0.3)}
         whileHover={{ scale: 1.05 }}
         className={`w-full mt-[-2px] flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} gap-5 bg-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 ease-in-out cursor-pointer`}
       >
@@ -60,6 +60,7 @@ const Portfolio = () => {
     <div className='text-center md:text-left md:px-20 lg:px-40'>
       <motion.div variants={textVariant()}>
         <h2 className={`${styles.sectionText}`}>Portfolio</h2>
+        <p className="text-white text-lg">These are some of the projects I have worked on. Just click the project to learn more about it!</p>
       </motion.div>
 
       <div className='mt-10 md:mt-20 flex flex-col gap-10 md:gap-20'>

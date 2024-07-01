@@ -21,9 +21,7 @@ const Contact = () => {
   }, [controls]);
 
   return (
-    <div
-      className="md:m-12 md:px-48 flex flex-col sm:flex-row gap-10 overflow-hidden"
-    >
+    <div className="md:m-12 md:px-48 flex flex-col sm:flex-row gap-10 overflow-hidden text-center">
       <motion.div
         initial="hidden"
         animate={controls}
@@ -42,43 +40,35 @@ const Contact = () => {
             },
           },
         }}
-        className='flex-[0.8] md:pb-40 mx-4 sm:mx-auto'
+        className="flex-[0.8] md:pb-40 mx-4 sm:mx-auto"
       >
         <h3 className={styles.sectionText}>Contact</h3>
-
-        <form
-          action="https://getform.io/f/zaxddgka"
-          method="POST"
-          className="mt-12 gap-4 flex flex-col"
-        >
-          <span className='text-white font-medium mt-3'>Full Name</span>
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter your full name"
-            className="bg-tertiary p-4 text-black border font-medium"
-          />
-          <span className='text-white font-medium mt-3'>Email Address</span>
-          <input
-            type="text"
-            name="email"
-            placeholder="Enter your email address"
-            className="bg-tertiary p-4 text-black border font-medium"
-          />
-          <span className='text-black font-medium mt-3'>Message</span>
-          <textarea
-            name="message"
-            placeholder="Enter your message"
-            rows="10"
-            className="bg-tertiary p-4 text-black border font-medium"
-          />
-          <button
-            type='submit'
-            className='bg-tertiary py-3 px-8 w-fit text-white font-bold shadow-md shadow-primary '
+        <p className="text-white text-center">If you want to ever chat, feel free to contact me through e-mail or LinkedIn!</p>
+        <div className="flex mt-8 space-x-4 items-center justify-center">
+          <a
+            href="https://github.com/taejunha"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-800 text-white py-2 px-4 rounded"
           >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+            GitHub
+          </a>
+          <a
+            href="https://linkedin.com/in/taejun-ha"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-600 text-white py-2 px-4 rounded"
+          >
+            LinkedIn
+          </a>
+          <a
+            href="mailto:hataejun24@gmail.com"
+            className="bg-green-600 text-white py-2 px-4 rounded"
+          >
+            Email
+          </a>
+        </div>
+        <footer className="text-gray-500 p-10">Created by Taejun Ha</footer>
       </motion.div>
     </div>
   );
