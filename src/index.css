@@ -64,7 +64,7 @@ body {
 .parallax_stars {
   z-index: 1;
   position: relative;
-  top: -280px;
+  top: -270px;
   --parallax-speed: -200;
 }
 
@@ -84,7 +84,7 @@ body {
   transform: scale(0.97);
   position: absolute;
   top: 440px;
-  --parallax-speed: -14;
+  --parallax-speed: -25;
 }
 
 .parallax_sky {
@@ -92,7 +92,7 @@ body {
   transform: scale(0.96);
   position: absolute;
   top: 230px;
-  --parallax-speed: -15;
+  --parallax-speed: -50;
 }
 
 .parallax_mountain {

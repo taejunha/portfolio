@@ -1,19 +1,11 @@
-import emailjs from "@emailjs/browser";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 
 const Contact = () => {
-  const formRef = useRef();
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const [loading, setLoading] = useState(false);
   const controls = useAnimation();
 
   useEffect(() => {
@@ -43,30 +35,33 @@ const Contact = () => {
         className="flex-[0.8] md:pb-40 mx-4 sm:mx-auto"
       >
         <h3 className={styles.sectionText}>Contact</h3>
-        <p className="text-white text-center">If you want to ever chat, feel free to contact me through e-mail or LinkedIn!</p>
+        <p className="text-white text-center">If you want to get in touch, feel free to contact me through e-mail or LinkedIn!</p>
         <div className="flex mt-8 space-x-4 items-center justify-center">
-          <a
+          <motion.a
             href="https://github.com/taejunha"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-gray-800 text-white py-2 px-4 rounded"
+            whileHover={{ scale: 1.2 }}
+            className="bg-gray-800 text-white py-2 px-4 rounded flex items-center justify-center"
           >
-            GitHub
-          </a>
-          <a
+            <FaGithub className="text-white text-2xl" />
+          </motion.a>
+          <motion.a
             href="https://linkedin.com/in/taejun-ha"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-blue-600 text-white py-2 px-4 rounded"
+            whileHover={{ scale: 1.2 }}
+            className="bg-blue-600 text-white py-2 px-4 rounded flex items-center justify-center"
           >
-            LinkedIn
-          </a>
-          <a
+            <FaLinkedin className="text-white text-2xl" />
+          </motion.a>
+          <motion.a
             href="mailto:hataejun24@gmail.com"
-            className="bg-green-600 text-white py-2 px-4 rounded"
+            whileHover={{ scale: 1.2 }}
+            className="bg-green-600 text-white py-2 px-4 rounded flex items-center justify-center"
           >
-            Email
-          </a>
+            <FaEnvelope className="text-white text-2xl" />
+          </motion.a>
         </div>
         <footer className="text-gray-500 p-10">Created by Taejun Ha</footer>
       </motion.div>

@@ -1,6 +1,11 @@
 import spotify from "../assets/spotify.png";
 import campus from "../assets/campus.png";
 import soulage from "../assets/soulage.png";
+import close from '../assets/close.svg';
+import menu from '../assets/menu.svg';
+
+export { close, menu };
+
 
 export const navLinks = [
     {
@@ -10,6 +15,10 @@ export const navLinks = [
     {
       id: "portfolio",
       title: "Portfolio",
+    },
+    {
+      id: "travels",
+      title: "Travels",
     },
     {
       id: "contact",

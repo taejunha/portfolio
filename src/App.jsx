@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { BrowserRouter } from "react-router-dom";
-import { Contact, First, Intro, Projects } from "./components";
+import { Contact, Hero, Intro, Projects, Navbar, Travels } from "./components";
 import Starfield from './components/Starfield';
 
 const App = () => {
@@ -9,28 +9,32 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'>
+        <Navbar />
         <div className='wrapper' ref={wrapperRef}>
           <div id="hero" className='z-10'>
-            <First scrollContainer={wrapperRef} />
+            <Hero scrollContainer={wrapperRef} />
           </div>
-          <div id="introduction" className="pd-2">
+          <div id="intro" className="pd-2">
             <Intro />
           </div>
-          <div id="projects" className='relative z-30 bg-primary mt-[-2px]'>
+          <div id="portfolio" className='relative z-30 bg-primary mt-[-2px]'>
             <Projects />
+          </div>
+          <div id="travels" className='relative z-30 bg-primary'>
+            <Travels />
           </div>
           <div id="contact" className='relative z-30 bg-primary'>
             <Contact />
           </div>
         </div>
       </div>
-      {/* <Starfield
+      <Starfield
           zIndex={-1}
           starCount={800}
-          starColor={[255,255,153]}
+          starColor={[255,255,255]}
           speedFactor={0.013}
           backgroundColor="black"
-        /> */}
+        />
     </BrowserRouter>
   );
 };

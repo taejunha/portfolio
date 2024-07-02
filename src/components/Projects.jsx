@@ -29,12 +29,12 @@ const ProjectCard = ({
   const isEven = index % 2 === 0;
 
   return (
-    <a href={link} target="_blank" rel="noopener noreferrer" className="no-underline">
+    <a id="portfolio" href={link} target="_blank" rel="noopener noreferrer" className="no-underline">
       <motion.div
         ref={ref}
         animate={controls}
         initial="hidden"
-        variants={fadeIn("right", "spring", 0, 0.3)}
+        variants={fadeIn("right", "spring", index * 0.2, 1)}
         whileHover={{ scale: 1.05 }}
         className={`w-full mt-[-2px] flex flex-col md:flex-row ${isEven ? "md:flex-row" : "md:flex-row-reverse"} gap-5 bg-gray-800 p-6 rounded-lg shadow-lg transition-transform duration-300 ease-in-out cursor-pointer`}
       >
