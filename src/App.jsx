@@ -1,13 +1,17 @@
 import { useEffect, useRef } from 'react';
-import { BrowserRouter } from "react-router-dom";
 import { Contact, Hero, Intro, Projects, Navbar, Travels } from "./components";
 import Starfield from './components/Starfield';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 const App = () => {
   const wrapperRef = useRef(null);
 
   return (
-    <BrowserRouter>
+    <Router>
       <div className='relative z-0 bg-primary'>
         <Navbar />
         <div className='wrapper' ref={wrapperRef}>
@@ -20,9 +24,9 @@ const App = () => {
           <div id="portfolio" className='relative z-30 bg-primary mt-[-2px]'>
             <Projects />
           </div>
-          <div id="travels" className='relative z-30 bg-primary'>
-            <Travels />
-          </div>
+          <Routes>
+            <Route path="/travel" element={ <Travels />} />
+          </Routes>
           <div id="contact" className='relative z-30 bg-primary'>
             <Contact />
           </div>
@@ -35,7 +39,7 @@ const App = () => {
           speedFactor={0.013}
           backgroundColor="black"
         />
-    </BrowserRouter>
+    </Router>
   );
 };
 

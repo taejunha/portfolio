@@ -64,14 +64,14 @@ body {
 .parallax_stars {
   z-index: 1;
   position: relative;
-  top: -270px;
+  top: -250px;
   --parallax-speed: -200;
 }
 
 .parallax_bg {
   z-index: 0;
   position: absolute;
-  bottom: 25px;
+  bottom: 45px;
   object-fit: cover;
   width: 100%;
   min-height: 100%;
@@ -79,26 +79,26 @@ body {
 }
 
 .parallax_hill {
-  z-index: 4;
+  z-index: 5;
   max-width: 800px;
   transform: scale(0.97);
   position: absolute;
-  top: 440px;
+  top: 460px;
   --parallax-speed: -25;
 }
 
 .parallax_sky {
-  z-index: 3;
+  z-index: 4;
   transform: scale(0.96);
   position: absolute;
-  top: 230px;
+  top: 250px;
   --parallax-speed: -50;
 }
 
 .parallax_mountain {
   z-index: 2;
   max-width: 750px;
-  top: 150px;
+  top: 170px;
   left: 650px;
   position: absolute;
   --parallax-speed: 15;
@@ -109,7 +109,7 @@ body {
   transform: scale(0.97);
   height: auto;
   position: absolute;
-  top: 340px;
+  top: 360px;
   --parallax-speed: -70;
 }
 
@@ -119,7 +119,6 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  left: 150px;
   top: 300px;
 }
 
@@ -240,4 +239,73 @@ body {
                 -2.6em 0em 0 0em rgba(255, 255, 255, 0.7),
                 -1.8em -1.8em 0 0em #ffffff;
   }
+}
+
+/* css for horizontal scroll */
+
+.slide {
+  width: 90%;
+  z-index: 3;
+  max-width: 1150px;
+  position: relative;
+  height: 100px;
+  margin-top: 5rem;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.item {
+  width: 400px;
+  height: 100px;
+  border-radius: 6px;
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+.item3 {
+  animation-delay: calc(30s / 8 * (8 - 3) * -1);
+}
+
+.item4 {
+  animation-delay: calc(30s / 8 * (8 - 4) * -1);
+}
+
+.item5 {
+  animation-delay: calc(30s / 8 * (8 - 5) * -1);
+}
+
+.item6 {
+  animation-delay: calc(30s / 8 * (8 - 6) * -1);
+}
+
+.item7 {
+  animation-delay: calc(30s / 8 * (8 - 7) * -1);
+}
+
+.item8 {
+  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }

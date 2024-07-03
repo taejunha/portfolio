@@ -45,6 +45,18 @@ const Navbar = () => {
         scrolled ? "bg-black" : "bg-transparent"
       }`}
     >
+        <Link
+          to=''
+          className='flex items-start'
+          onClick={() => {
+            setActive("hero");
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }}
+        >
+          <p className='text-white text-[26px] lg:text-[36px] font-bold pointer-events-auto cursor-pointer flex'>
+            TH
+          </p>
+        </Link>
       <div className="w-full flex justify-between items-center mx-auto">
         <ul className="list-none hidden sm:flex flex-row gap-5 ml-auto">
           {navLinks.map((nav) => (
