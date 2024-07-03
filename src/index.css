@@ -247,6 +247,7 @@ body {
   width: 90%;
   z-index: 3;
   max-width: 1150px;
+  justify-content: space-evenly;
   position: relative;
   height: 100px;
   margin-top: 5rem;
@@ -267,7 +268,7 @@ body {
 }
 
 .item {
-  width: 400px;
+  width: 150px;
   height: 100px;
   border-radius: 6px;
   position: absolute;
