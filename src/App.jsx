@@ -24,9 +24,9 @@ const App = () => {
           <div id="portfolio" className='relative z-30 bg-primary mt-[-2px]'>
             <Projects />
           </div>
-          <Routes>
-            <Route path="/travel" element={ <Travels />} />
-          </Routes>
+          <div id="travels" className='relative z-30 bg-primary mt-[-2px]'>
+            <Travels />
+          </div>
           <div id="contact" className='relative z-30 bg-primary'>
             <Contact />
           </div>

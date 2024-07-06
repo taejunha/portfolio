@@ -78,6 +78,18 @@ body {
   --parallax-speed: -59;
 }
 
+@media (max-height: 867px) {
+  .parallax_bg {
+    z-index: 0;
+    position: absolute;
+    bottom: 10px;
+    object-fit: cover;
+    width: 100%;
+    min-height: 100%;
+    --parallax-speed: -59;
+  }
+}
+
 .parallax_hill {
   z-index: 5;
   max-width: 800px;
@@ -309,4 +321,8 @@ body {
 
 .item8 {
   animation-delay: calc(30s / 8 * (8 - 8) * -1);
+}
+
+.photo {
+  z-index: 10;
 }
