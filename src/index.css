@@ -127,11 +127,90 @@ body {
 
 .parallax__content {
   --parallax-speed: -200;
-  z-index: 2;
+  z-index: 5;
   position: absolute;
   display: flex;
   flex-direction: column;
   top: 300px;
+  height:20vh;
+  width:100%; 
+}
+
+.name__ha {
+  color: #F1FAEE; 
+  font-size: 4rem;
+}
+
+.roller{
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden; 
+  width: 100%;
+  display: flex;
+  color: #1D3557;
+}
+
+#spare-time{
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #A8DADC;
+  
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;  
+}
+
+@keyframes slide {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -4rem;    
+  }
+  50%{
+    top: -8rem;
+  }
+  72.5%{
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .name__ha {
+  text-align:center;
+  color: #F1FAEE; 
+  font-size: 2.125rem;
+}
+  
+  .roller{
+  height: 2.6rem; 
+  line-height: 2.125rem;  
+  }
+  
+  .roller #rolltext {  
+  animation: slide-mob 5s infinite;  
+}
+  
+  @keyframes slide-mob {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -2.125rem;    
+  }
+  50%{
+    top: -4.25rem;
+  }
+  72.5%{
+    top: -6.375rem;
+  }
+}
 }
 
 .info::before {
@@ -261,7 +340,7 @@ body {
   max-width: 1150px;
   justify-content: space-evenly;
   position: relative;
-  height: 100px;
+  height: 200px;
   margin-top: 5rem;
   overflow: hidden;
   mask-image: linear-gradient(
@@ -273,6 +352,39 @@ body {
   );
 }
 
+@media (max-width: 1024px) {
+  .slide {
+    width: 90%;
+    z-index: 3;
+    max-width: 1150px;
+    justify-content: space-evenly;
+    position: relative;
+    height: 200px;
+    margin-top: 5rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  .item {
+    width: 250px;
+    height: 100px;
+    border-radius: 6px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+}
+
 @keyframes scrollLeft {
   to {
     left: -200px;
@@ -280,7 +392,7 @@ body {
 }
 
 .item {
-  width: 150px;
+  width: 250px;
   height: 100px;
   border-radius: 6px;
   position: absolute;
@@ -309,18 +421,6 @@ body {
 
 .item5 {
   animation-delay: calc(30s / 8 * (8 - 5) * -1);
-}
-
-.item6 {
-  animation-delay: calc(30s / 8 * (8 - 6) * -1);
-}
-
-.item7 {
-  animation-delay: calc(30s / 8 * (8 - 7) * -1);
-}
-
-.item8 {
-  animation-delay: calc(30s / 8 * (8 - 8) * -1);
 }
 
 .photo {
