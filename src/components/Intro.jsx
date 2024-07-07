@@ -26,7 +26,7 @@ const Intro = () => {
         className="text-white md:px-10 lg:px-20 2xl:px-32 py-10 2xl:py-25 relative z-0"
       >
         <motion.h1
-          className="text-white font-bold px-5 md:text-[80px] sm:text-[50px] text-[40px]"
+          className="text-white font-bold px-5 md:text-[80px] sm:text-[50px] text-[40px] underline"
           variants={textVariant(0.3)}
         >
           About Me
@@ -34,7 +34,7 @@ const Intro = () => {
         <motion.p className="text-lg mt-10 px-5" variants={textVariant(0.4)}>
           Hello, my name is Taejun Ha! I am currently a 4th year computer science student at the University of Western Ontario. 
           When I'm not at school or at my computer, you'll usually find me running, playing volleyball, watching hockey, or playing games.
-          I am also a huge traveler, so feel free to check out some of the places I've been to down below! Also, check out some of the projects I have worked on. 
+          I am also a huge traveller, so feel free to check out some of the places I've been to down below! Also, check out some of the projects I have worked on. 
           If you want to learn more about me, or chat about anything, feel free to contact me!
         </motion.p>
         <motion.p className="text-lg mt-10 px-5" variants={textVariant(0.5)}>
@@ -50,7 +50,7 @@ const Intro = () => {
           animate={controls}
           variants={fadeIn("up", "spring", 0.6, 1)}
         >
-          <motion.h2 className="text-2xl font-bold mb-4" variants={textVariant(0.7)}>
+          <motion.h2 className="text-2xl font-bold mb-4 decoration-solid" variants={textVariant(0.7)}>
             Education & Experience
           </motion.h2>
           <motion.h3 className="text-xl font-semibold" variants={textVariant(0.8)}>

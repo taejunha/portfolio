@@ -15,7 +15,7 @@ const Travels = () => {
 
   return (
     <div className="md:m-12 md:px-48 flex flex-col gap-10 overflow-hidden text-center justify-center">
-      <h1 className={styles.sectionText}>Travels</h1>
+      <h1 className={`${styles.sectionText} underline`}>Travels</h1>
       <PhotoAlbum
         photos={photos}
         layout="rows"

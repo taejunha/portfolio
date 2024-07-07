@@ -59,7 +59,7 @@ const Portfolio = () => {
   return (
     <div className='text-center md:text-left md:px-20 lg:px-40'>
       <motion.div variants={textVariant()}>
-        <h2 className={`${styles.sectionText}`}>Portfolio</h2>
+        <h2 className={`${styles.sectionText} underline`}>Portfolio</h2>
         <p className="text-white text-lg">These are some of the projects I have worked on. Just click the project to learn more about it!</p>
       </motion.div>
 

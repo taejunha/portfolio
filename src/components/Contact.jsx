@@ -34,7 +34,7 @@ const Contact = () => {
         }}
         className="flex-[0.8] md:pb-40 mx-4 sm:mx-auto"
       >
-        <h3 className={styles.sectionText}>Contact</h3>
+        <h3 className={`${styles.sectionText} underline`}>Contact</h3>
         <p className="text-white text-center">If you want to get in touch, feel free to contact me through e-mail or LinkedIn!</p>
         <div className="flex mt-8 space-x-4 items-center justify-center">
           <motion.a
