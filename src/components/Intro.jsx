@@ -32,10 +32,11 @@ const Intro = () => {
           About Me
         </motion.h1>
         <motion.p className="text-lg mt-10 px-5" variants={textVariant(0.4)}>
-          Hello, my name is Taejun Ha! I am currently a 4th year computer science student at the University of Western Ontario. 
-          When I'm not at school or at my computer, you'll usually find me running, playing volleyball, watching hockey, or playing games.
-          I am also a huge traveller, so feel free to check out some of the places I've been to down below! Also, check out some of the projects I have worked on. 
-          If you want to learn more about me, or chat about anything, feel free to contact me!
+        Hello, I'm Taejun Ha! Currently, I'm a 4th-year Computer Science student at the University of Western Ontario. 
+        When I'm not immersed in my studies or coding away, you'll likely find me engaging in activities like running, playing volleyball, 
+        watching hockey, gaming, or eating. I have a passion for travel, so feel free to explore some of the amazing places I've visited below! 
+        Additionally, don't miss out on checking out the projects I've worked on. If you'd like to learn more about me or just have a chat, 
+        please don't hesitate to reach out. I'd love to connect!
         </motion.p>
         <motion.p className="text-lg mt-10 px-5" variants={textVariant(0.5)}>
           Some courses I have taken at Western include data structures and algorithms, databases, introduction to software engineering, 
