@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
-import { textVariant, fadeIn } from "../utils/motion"; // Adjust the import path as necessary
+import { textVariant, fadeIn } from "../utils/motion";
 
 const Intro = () => {
   const controls = useAnimation();
