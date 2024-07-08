@@ -4,7 +4,7 @@ import { fadeIn } from "../utils/motion";
 const Hero = ({ scrollContainer }) => {
   return (
     <section className="parallax">
-      <div className="parallax__content absolute top-[1%] sm:top-[15%] lg:top-[9%] w-full flex flex-col items-center justify-center sm:right-[5%] md:right-[5%] lg:right-[17%] 2xl:right-[20%]">
+      <div className="parallax__content absolute top-[1%] sm:top-[15%] lg:top-[9%] w-full flex flex-col items-center justify-center sm:right-[5%] md:right-[5%] lg:right-[17%] 2xl:right-[25%]">
         <div className="flex-1 lg:mb-0 top-5">
           <motion.div
             className="font-bold text-white"
