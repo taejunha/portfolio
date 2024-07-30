@@ -1,6 +1,6 @@
 import spotify from "../assets/spotify.png";
 import campus from "../assets/campus.png";
-import soulage from "../assets/soulage.png";
+import soulage from "../assets/soulage.jpeg";
 import close from '../assets/close.svg';
 import menu from '../assets/menu.svg';
 
